@@ -1,5 +1,5 @@
 {% set name = "O365" %}
-{% set version = "2.0.31" %}
+{% set version = "2.0.32" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/O365-{{ version }}.tar.gz
-  sha256: 05b367a58e47cc536f58a9bbf25a1a10083a9be3c5d2fd7efc45c9ad015b87d0
+  sha256: 1e12218454e5d735d967751d95bc813ddf4cb3dbfe2f44042beaba2156296d69
 
 build:
   noarch: python
@@ -16,15 +16,15 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.9
     - wheel
     - pip
   run:
-    - python >=3.7
+    - python >=3.9
     - requests >=2.18.0
     - requests-oauthlib >=1.2.0
     - python-dateutil >=2.7
-    - tzlocal >=4.0,<5.0
+    - tzlocal >=5.0
     - beautifulsoup4 >=4.0.0
     - stringcase >=1.2.0
 
