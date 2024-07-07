@@ -1,5 +1,5 @@
 {% set name = "O365" %}
-{% set version = "2.0.35" %}
+{% set version = "2.0.36" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/O365-{{ version }}.tar.gz
-  sha256: 841d3f7d181265f14d8b90d98e5b15279eaaf0f3ac2d025909b14473c63aff7e
+  sha256: 85403b6270169c31e572e63dff1daa38be62d030dac01ada428908c0214928b6
 
 build:
   noarch: python
